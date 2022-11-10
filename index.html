@@ -56,21 +56,21 @@ x-data="{menuIsOpen: false, accordeon1IsOpen: false,accordeon2IsOpen: false, acc
     <h2>Lorem, ipsum.</h2>
 
     <dl>
-      <button>
-      <dt>Lorem.</dt>
-      </button>
-      <dd>Lorem ipsum dolor sit amet.</dd>
+      <dt
+      @click="accordeon1IsOpen = ! accordeon1IsOpen"
+      >
+      Lorem.</dt>
+      <dd
+      x-show="accordeon1IsOpen"
+      >
+      Lorem ipsum dolor sit amet.</dd>
     </dl>
     <dl>
-      <button>
       <dt>Dignissimos?</dt>
-      </button>
       <dd>Facilis voluptas explicabo reiciendis fugit.</dd>
     </dl>
     <dl>
-      <button>
       <dt>Asperiores.</dt>
-      </button>
       <dd>Animi suscipit accusantium repudiandae aperiam?</dd>
     </dl>
 
